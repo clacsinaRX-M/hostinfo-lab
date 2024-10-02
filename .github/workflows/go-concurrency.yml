@@ -6,6 +6,7 @@ on:
   pull_request:
     branches: [ master ]
 
+### Add this
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}-${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
